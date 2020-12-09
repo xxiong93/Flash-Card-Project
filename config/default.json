@@ -1,4 +1,4 @@
 {
-  "mongoURI": "CONNECTION STRING HERE",
+  "mongoURI": "mongodb+srv://RamenShop93:Projectramen93#@cluster0.i7jdv.mongodb.net/FlashCardProject?retryWrites=true&w=majority",
   "jwtSecret": "mysecrettoken"
 }
