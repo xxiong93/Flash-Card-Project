@@ -1,4 +1,4 @@
 {
-  "mongoURI": "mongodb+srv://RamenShop93:Projectramen93#@cluster0.i7jdv.mongodb.net/FlashCardProject?retryWrites=true&w=majority",
+  "mongoURI": "mongodb+srv://RamenShop93:Projectramen93%23@cluster0.i7jdv.mongodb.net/FlashCardProject?retryWrites=true&w=majority",
   "jwtSecret": "mysecrettoken"
 }
