@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Card from './Card/card';
+
 import CardViewer from './CardViewer/cardViewer';
 import axios from 'axios';
 
@@ -16,7 +16,6 @@ class App extends Component {
 
     }
 
-
     getReactCollection(){
         axios.get('http://localhost:5000/api/collections/5fd03e7677436a648832415f').then(response => {
             console.log(this.collection);
@@ -27,7 +26,7 @@ class App extends Component {
         });
     }
     getCSharpCollection(){
-        axios.get('http://localhost:5000/api/collections/5fd03e7677436a648832415f').then(response => {
+        axios.get('http://localhost:5000/api/collections/5fd03e7877436a6488324166').then(response => {
             console.log(this.collection);
             let newCollection = response.data;
             // this.setState(collection);
@@ -72,11 +71,10 @@ class App extends Component {
     render() {
         return(
             this.state.loading ? <div>Loading...</div> :
-        <div><h1>TEST PAGE</h1>
-        {/* <h2>{this.state.collection}</h2> */}
-        <CardViewer card={this.state.cards[this.state.currentCard]} nextCard={() => this.goToNextCard()} previousCard={() => this.goToPreviousCard()}/>
-            
-            <Card card={this.state.cards[this.state.currentCard]}/>
+        <div><h1>Flash Cards</h1>
+        <CardViewer card={this.state.cards[this.state.currentCard]} nextCard={() => this.goToNextCard()} 
+            previousCard={() => this.goToPreviousCard()}/>
+        {/* <Card card={this.state.cards[this.state.currentCard]}/> */}
         </div>
                
             );
