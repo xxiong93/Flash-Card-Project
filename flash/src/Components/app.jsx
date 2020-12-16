@@ -20,7 +20,6 @@ class App extends Component {
         axios.get('http://localhost:5000/api/collections/5fd03e7677436a648832415f').then(response => {
             console.log(this.collection);
             let newCollection = response.data;
-            // this.setState(collection);
             console.log(newCollection);
             return(newCollection);
         });
@@ -29,7 +28,6 @@ class App extends Component {
         axios.get('http://localhost:5000/api/collections/5fd03e7877436a6488324166').then(response => {
             console.log(this.collection);
             let newCollection = response.data;
-            // this.setState(collection);
             console.log(newCollection);
             return(newCollection);
         });
